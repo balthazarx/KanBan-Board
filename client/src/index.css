@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap');
+
+:root {
+  font-family: 'Inter Tight', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #ffffff;
+  background-color: #000000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Placeholder text styling */
+::-webkit-input-placeholder, input:-moz-placeholder {
+  text-align: right;
+  color: #ccc;
+}
+
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #b0b0b0;
+}
+
+body {
+  background: #000000;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #000;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background-color: #222;
+  border-color: #b0b0b0;
+}
+
+main {
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Table Styling */
+table {
+  width: 80vw;
+  border-collapse: collapse;
+}
+tr {
+  background-color: #111;
+  color: white;
+}
+tbody tr:nth-child(odd) {
+  background-color: #222;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  padding: 1em 2em;
+}
+
+.nav-title {
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.nav ul {
+  display: flex;
+  margin-left: auto;
+  flex-direction: row;
+}
+
+.nav-item {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #b0b0b0;
+}
+
+/* Board Layout */
+.board-display {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.swim-lane {
+  text-align: center;
+  font-weight: 500;
+  width: 32%;
+  height: 90vh;
+  background-color: #111;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.todo {
+  background-color: #333;
+}
+.inprogress {
+  background-color: #444;
+}
+.done {
+  background-color: #555;
+}
+
+.ticket-card {
+  text-align: left;
+  background-color: #000;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  border: 1px solid #333;
+}
+
+/* Forms */
+.form {
+  width: 60%;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.form > h1, .form > label {
+  color: #ffffff;
+}
+
+.form > input, .form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+.form button {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.form button:hover {
+  background-color: #222;
+}
+
+/* Buttons */
+.editBtn, .deleteBtn {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.editBtn:hover, .deleteBtn:hover {
+  background-color: #222;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000;
+    background-color: #fff;
+  }
+  a {
+    color: #000;
+  }
+  button {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+  }
+}
